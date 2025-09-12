@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { motion } from "framer-motion";
-import Globe from '../components/Globe'; // Import the Globe component
-import Footer from '../components/Footer'; // Import the Footer component
+import Globe from '../components/Globe';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 interface ExpertiseItem {
   title: string;
@@ -25,13 +26,12 @@ export default function HomePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const sectionHeight = typeof window !== 'undefined' ? window.innerHeight : 800;
   const parallaxSpeed = 0.5;
   const parallaxY = scrollY * parallaxSpeed;
 
   return (
     <div className="relative min-h-screen bg-white overflow-hidden">
-      
+      <Navbar />
       {/* Hero Section with Parallax Background */}
       <section className="h-screen relative flex items-center justify-center overflow-hidden">
         <div 
@@ -60,7 +60,7 @@ export default function HomePage() {
             className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 text-white leading-tight drop-shadow-2xl"
           >
             Hi everyone, 
-            I'm Yasmin!
+            I&apos;m Yasmin!
           </motion.h1>
           
           <motion.p
@@ -113,6 +113,7 @@ export default function HomePage() {
             <div className="lg:col-span-2 flex justify-center lg:justify-start">
               <div className="relative">
                 <div className="w-96 h-96 rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-purple-100 ring-4 ring-white/50">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                     src="/pp.jpeg" 
                     alt="Yasmin Putri Sujono"
@@ -139,13 +140,13 @@ export default function HomePage() {
               
               <div className="space-y-6 text-lg leading-relaxed">
                 <p className="text-black">
-                  I'm <span className="text-black font-semibold">Yasmin Putri Sujono</span>, an Informatics Engineering student at Sepuluh Nopember Institute of Technology (ITS) with a passion for building user-friendly digital products, 
+                  I&apos;m <span className="text-black font-semibold">Yasmin Putri Sujono</span>, an Informatics Engineering student at Sepuluh Nopember Institute of Technology (ITS) with a passion for building user-friendly digital products, 
                   combining creativity with technical expertise in software development, UI/UX design, and data science.
                 </p>
                 
                 <p className="text-black">
                  Over the past few years, I have hands-on experience in frontend, backend, and data science. 
-                 Beyond academics, I've strengthened my communication, collaboration, and leadership skills through active roles in student organizations.
+                 Beyond academics, I&apos;ve strengthened my communication, collaboration, and leadership skills through active roles in student organizations.
                 </p>
               </div>
 
@@ -244,10 +245,10 @@ export default function HomePage() {
       <section className="py-20 bg-gray-900 relative z-10">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-            Have a project in mind? I'd love to help bring your ideas to life 
+            Have a project in mind? I&apos;d love to help bring your ideas to life 
             with clean design and robust development.
           </p>
           
@@ -287,13 +288,13 @@ export default function HomePage() {
                 title: "ILBI Innovation Center Website", 
                 description: "Official institutional website for ITS Innovation and Business Incubator",
                 tech: "Figma, Wordpress, Slack",
-                image: "h.png" // Add your project image path
+                image: "h.png"
               },
               {
                 title: "Cinema Express",
                 description: "Web application designed to streamline cinema operations and enhance customer booking experiences.",
                 tech: "Express.js, Vue.js, Node.js",
-                image: "a.png" // Add your project image path
+                image: "a.png"
               }
             ].map((project, index) => (
               <div 
@@ -301,12 +302,12 @@ export default function HomePage() {
                 className="group bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer border border-blue-100/50 overflow-hidden"
               >
                 <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-600 relative overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                     src={project.image} 
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    onError={(e) => {
-                      // Fallback if image doesn't exist
+                    onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
                       const target = e.target as HTMLImageElement;
                       const nextElement = target.nextElementSibling as HTMLElement;
                       target.style.display = 'none';

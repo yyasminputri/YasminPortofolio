@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight, ExternalLink, Github } from 'lucide-react';
 import Footer from '../components/Footer'; // Import the Footer component
+import Navbar from '../components/Navbar';
 
 interface Project {
   id: number;
@@ -267,6 +268,7 @@ export default function PortfolioShowcase() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white pt-20">
+      <Navbar />
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -318,6 +320,7 @@ export default function PortfolioShowcase() {
                   }}
                 >
                   <div className="absolute inset-0 flex items-center justify-center">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={activeProject.photos[imageIndex]}
                       alt={activeProject.name}
