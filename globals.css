@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap');
+
+body {
+  @apply font-inter text-softWhite bg-black scroll-smooth;
+}
+
+h1, h2, h3 {
+  @apply font-display;
+}
+
+::selection {
+  background-color: #FFD369;
+  color: black;
+}
