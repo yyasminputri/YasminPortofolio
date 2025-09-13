@@ -165,7 +165,7 @@ export default function HomePage() {
                 <button 
                   onClick={() => {
                     const link = document.createElement('a');
-                    link.href = '/MyResume.pdf';
+                    link.href = '/Resume_YasminPutriSujono.pdf';
                     link.download = 'Yasmin_Putri_Sujono_Resume.pdf';
                     document.body.appendChild(link);
                     link.click();
