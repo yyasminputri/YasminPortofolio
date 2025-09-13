@@ -198,7 +198,7 @@ export default function HomePage() {
               {
                 title: "Data Analysis Office Intern at Bank HSBC",
                 description: "Built and maintained data pipelines, transforming complex datasets into interactive dashboards with BigQuery, Python, and Qlik Sense to support business insights and decision-making.",
-                skills: ["BigQuery", "Python", "JupyterHub", "Qlik Sense", "Excel"]
+                skills: ["BigQuery", "Data Science Workbench", "Python", "JupyterHub", "Qlik Sense", "Excel"]
               },
               {
                 title: "Project Manager Intern at Retrux Studio", 
@@ -242,12 +242,12 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900 relative z-10">
+      <section className="py-20 bg-gradient-to-b from-gray-300 to-gray-200 relative z-10">
         <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-black mb-6">
             Let&apos;s Work Together
           </h2>
-          <p className="text-xl text-gray-300 mb-10 leading-relaxed">
+          <p className="text-xl text-black mb-10 leading-relaxed">
             Have a project in mind? I&apos;d love to help bring your ideas to life 
             with clean design and robust development.
           </p>
@@ -282,7 +282,7 @@ export default function HomePage() {
                 title: "Dashboard Personal Data Privacy",
                 description: "Built and maintained data pipelines, support business insights and decision-making",
                 tech: "Python, JupyterHub, Qlik Sense",
-                image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P8z/C/HwAGgwJ/lcbg+wAAAABJRU5ErkJggg=="
+                image: "t.png"
               },
               {
                 title: "ILBI Innovation Center Website", 

@@ -37,17 +37,16 @@ export default function PortfolioShowcase() {
       capabilities: ["CRUD Operations", "Database Integration", "Frontend-Backend Integration", "Recipe Management", "Search & Filter", "Bookmarking/Save to Favorites"],
       codeUrl: "https://github.com/yyasminputri/NextJS-React-Application"
     },
-    {
-      id: 2,
-      name: "Tastory",
-      summary: "Modern Android recipe app built with Jetpack Compose, designed for exploring visual cooking guides with native performance and beautiful Material Design 3 interface",
-      type: "Mobile Application",
+      {
+      id: 3,
+      name: "HSBC Data Analysis",
+      summary: "Data pipeline and dashboard automation project at HSBC, transforming raw datasets into business-ready insights using BigQuery, Python, JupyterHub, and Qlik Sense",
+      type: "Data Analyst",
       isHighlighted: true,
-      photos: ["9.png", "6.png", "7.png", "8.png"],
-      detailedInfo: "A recipe application built with Android Jetpack Compose that allows users to browse, save, and read visual cooking guides. Designed for mobile-first experience with intuitive navigation.",
-      techStack: ["Kotlin", "Jetpack Compose", "Android SDK", "Android Studio"],
-      capabilities: ["Visual Recipe Guides", "Interactive Cooking Guides", "Search & Filter"],
-      codeUrl: "https://github.com/yyasminputri/Recipe-Application"
+      photos: ["t.png", "u.png", "v.png"],
+      detailedInfo: "Streamlined data processing by integrating datasets collected from online/offline forms in Excel into the Data Science Workbench. Data was extracted and processed with BigQuery, analyzed using Python in JupyterHub, and transformed into interactive dashboards with Qlik Sense to support business insights and decision-making.",
+      techStack: ["Excel", "BigQuery", "Python", "JupyterHub", "Qlik Sense"],
+      capabilities: ["Data Pipeline Automation", "ETL Process", "Interactive Dashboards"],
     },
     {
       id: 3,
@@ -99,7 +98,7 @@ export default function PortfolioShowcase() {
     },
     {
       id: 7,
-      name: "Glowin Beauty & Wellness App",
+      name: "Glowin Beauty App",
       summary: "A comprehensive beauty and wellness mobile application for skincare enthusiasts",
       type: "Mobile Application",
       isHighlighted: false,
@@ -120,7 +119,19 @@ export default function PortfolioShowcase() {
       techStack: ["Three.js", "JavaScript", "WebGL", "HTML5 Canvas", "GLSL Shaders"],
       capabilities: ["3D Environment Rendering", "Interactive Graphics", "Real-time Lighting", "Browser-based Gaming", "Responsive Controls"],
       codeUrl: "https://github.com/yyasminputri/Animal-Crossing-ThreeJS"
-    }
+    },
+   {
+      id: 9,
+      name: "Tastory",
+      summary: "Modern Android recipe app built with Jetpack Compose, designed for exploring visual cooking guides with native performance and beautiful Material Design 3 interface",
+      type: "Mobile Application",
+      isHighlighted: false,
+      photos: ["9.png", "6.png", "7.png", "8.png"],
+      detailedInfo: "A recipe application built with Android Jetpack Compose that allows users to browse, save, and read visual cooking guides. Designed for mobile-first experience with intuitive navigation.",
+      techStack: ["Kotlin", "Jetpack Compose", "Android SDK", "Android Studio"],
+      capabilities: ["Visual Recipe Guides", "Interactive Cooking Guides", "Search & Filter"],
+      codeUrl: "https://github.com/yyasminputri/Recipe-Application"
+    },
   ];
 
   // Function to extract dominant color from image

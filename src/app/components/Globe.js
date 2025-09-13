@@ -129,7 +129,7 @@ export default function Globe() {
         <div ref={containerRef} className="w-full h-full" />
       </div>
       <p className="text-gray-600 text-sm mt-4">
-        Auto Rotating - drag to spin manually
+        auto rotating - drag to spin manually
       </p>
     </div>
   );
