@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-base mb-4 md:mb-0">
-            © 2025 Yasmin Putri Sujono. All rights reserved.
+            © 2026 Yasmin Putri Sujono. All rights reserved.
           </p>
         </div>
       </div>

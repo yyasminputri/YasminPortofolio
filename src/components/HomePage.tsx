@@ -201,14 +201,14 @@ export default function HomePage() {
                 skills: ["BigQuery", "Data Science Workbench", "Python", "JupyterHub", "Qlik Sense", "Excel"]
               },
               {
-                title: "Project Manager Intern at Retrux Studio", 
+                title: "Project Manager at Retrux Studio", 
                 description: "Led cross-functional collaboration to define scope, streamline workflows, and deliver prototypes that secured client trust and drove the project into its next phases.",
-                skills: ["Project Planning", "Stakeholder Management", "Click Up", "Slack", "Figma"]
+                skills: ["Project Planning", "Stakeholder Management", "Click Up", "Slack", "Figma", "Lark"]
               },
               {
-                title: "UI/UX Designer Intern at Retrux Studio",
-                description: "Designed and prototyped the ILBI ITS website through user research and Figma, achieving measurable growth in engagement and client satisfaction.",
-                skills: ["Figma", "Wireframing", "Prototyping", "User Research", "Wordpress"]
+                title: "IT Intern at PT. Untung Bersama Sejahtera (UBS)",
+                description: "Developed a Content-Based Image Retrieval system to identify jewelry products (rings, necklaces, earrings) using CLIP (ViT-L-14) and Streamlit.",
+                skills: ["Streamlit", "CLIP", "CBIR", "Finetuning", "Scrapping"]
               }
             ].map((expertise: ExpertiseItem, index: number) => (
                 <div 

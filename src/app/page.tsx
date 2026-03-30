@@ -1,5 +1,5 @@
 // src/app/page.tsx
-import Portfolio from '@/app/components/HomePage';
+import Portfolio from '@/components/HomePage';
 
 export default function Home() {
   return <Portfolio />;
